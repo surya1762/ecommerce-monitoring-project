@@ -1,0 +1,13 @@
+services:
+
+  nginx-ecommerce:
+    build: ./nginx-site
+    container_name: nginx-ecommerce
+    ports:
+      - "8081:80"
+
+  apache-ecommerce:
+    build: ./apache-site
+    container_name: apache-ecommerce
+    ports:
+      - "8082:80"
